@@ -1,35 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Advice generator app</title>
-<script src="./assets/js/scripte.js"></script>
-<link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-<main>
-  <section>
-    <article>
-      <p class="number-advice"></p>
-      <p class="advice"></p>
-      <picture>
-          <source
-            media="(min-width: 1024px)"
-            srcset="./assets/images/pattern-divider-desktop.svg"
-          />
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Advice generator app</title>
+    <script src="./assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <article>
+          <p class="number-advice"></p>
+          <p class="advice"></p>
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./assets/images/pattern-divider-desktop.svg"
+            />
+            <img
+              src="./assets/images/pattern-divider-mobile.svg"
+              alt="ligne de séparation"
+            />
+          </picture>
           <img
-            src="./assets/images/pattern-divider-mobile.svg"
-            alt="ligne de séparation"
+            src="./assets/images/icon-dice.svg"
+            alt="icon de génération"
+            class="advice-generator"
           />
-        </picture>
-        <img src="./assets/images/icon-dice.svg" alt="icon de génération" class="advice-generator">
-    </article>
-  </section>
-</main>
-</body>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
