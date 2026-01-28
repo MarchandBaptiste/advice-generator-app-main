@@ -31,6 +31,8 @@ article {
   padding: 2rem;
   border-radius: 10px;
   min-height: 300px;
+  position: relative;
+  padding-bottom: 4rem;
 }
 
 article img {
@@ -38,38 +40,37 @@ article img {
   height: auto;
 }
 article .advice-generator {
-  width: 25%;
-  height: auto;
+  width: 60px;
+  height: 60px;
   background-color: var(--Green-300);
-  padding: 1.7rem;
+  padding: 1.2rem;
   border-radius: 50%;
   position: absolute;
-  bottom: 32%;
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
 .advice-generator:hover {
     box-shadow: 0 0 30px var(--Green-300);
 }
 .number-advice{
   color: var(--Green-300);
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
 }
 .advice{
   color: var(--Blue-200);
   padding-bottom: 2rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
     article .advice-generator {
-  width: 5%;
-  height: auto;
-  background-color: var(--Green-300);
-  padding: 1.7rem;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 30%;
-  left: 50%;
-  transform: translateX(-50%);
-}
+      width: 64px;
+      height: 64px;
+      padding: 1.3rem;
+    }
 }
